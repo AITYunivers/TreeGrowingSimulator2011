@@ -1,33 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "%s",
+  "id": "treegrowingsimulator",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Tree Growing Simulator 2011",
+  "description": "A mod that allows you to speed up tree growth by running and dancing around them! Yes, really.",
   "authors": [
-    "Me!"
+    "tterrag",
+    "CaptainSwag101",
+    "Yunivers"
   ],
   "contact": {
-    "homepage": "https://glass-launcher.net/",
-    "sources": "https://github.com/calmilamsy/stationapi-example-mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/tree-growing-simulator",
+    "sources": "https://github.com/AITYunivers/TreeGrowingSimulator2011",
+    "issues": "https://github.com/AITYunivers/TreeGrowingSimulator2011/issues"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/%s/icon.png",
+  "license": "GNU-GPL3",
+  "icon": "assets/treegrowingsimulator/icon.png",
 
   "environment": "*",
   "entrypoints": {
-    "stationapi:event_bus": [
-      "%s.events.init.InitListener"
-    ],
-    "stationapi:event_bus_client": [
-    ],
-    "stationapi:event_bus_server": [
+    "gcapi3": [
+      "io.github.yunivers.treegrowingsimulator.config.Config"
     ]
   },
   "mixins": [
-    "%s.mixins.json"
+    "treegrowingsimulator.mixins.json"
   ],
 
   "depends": {
